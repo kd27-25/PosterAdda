@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PosterAdda — Make Your Walls Extraordinary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Poster<span>Adda</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#custom">Custom Posters</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" onclick="openSearch()">⌕</button>
+            <button class="icon-btn">♡</button>
+            <button class="cart-btn">
+                🛒 <span id="cart-count">0</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">YOUR WALL. YOUR STYLE.</p>
+
+            <h1>
+                Turn Your Walls
+                <br>
+                Into <span>Art.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover premium posters, LED wall art and
+                personalized designs made to transform your space.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="primary-btn">
+                    Shop Posters →
+                </a>
+
+                <a href="#custom" class="secondary-btn">
+                    Create Your Own
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="poster poster-one">
+                <div class="poster-text">
+                    DREAM<br>BIG
+                </div>
+            </div>
+
+            <div class="poster poster-two">
+                <div class="poster-text">
+                    CREATE<br>YOUR<br>SPACE
+                </div>
+            </div>
+
+            <div class="poster poster-three">
+                <div class="poster-text">
+                    LIVE<br>LOUD
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRUST BAR ================= -->
+
+    <section class="trust-bar">
+
+        <div>
+            <strong>Premium Quality</strong>
+            <span>High-quality prints</span>
+        </div>
+
+        <div>
+            <strong>Multiple Sizes</strong>
+            <span>Find your perfect fit</span>
+        </div>
+
+        <div>
+            <strong>Custom Designs</strong>
+            <span>Make it yours</span>
+        </div>
+
+        <div>
+            <strong>Secure Checkout</strong>
+            <span>Safe & simple payments</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="section" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-heading">EXPLORE</p>
+                <h2>Shop By Vibe</h2>
+            </div>
+
+            <a href="#">View All →</a>
+
+        </div>
+
+
+        <div class="categories">
+
+            <div class="category-card">
+                <div class="category-image anime"></div>
+                <h3>Anime</h3>
+                <p>Express your fandom</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image music"></div>
+                <h3>Music</h3>
+                <p>Let the walls speak</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image cars"></div>
+                <h3>Cars</h3>
+                <p>For speed lovers</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image sports"></div>
+                <h3>Sports</h3>
+                <p>Bring the game home</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image movies"></div>
+                <h3>Movies</h3>
+                <p>Your favorite worlds</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image aesthetic"></div>
+                <h3>Aesthetic</h3>
+                <p>Make your space yours</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BEST SELLERS ================= -->
+
+    <section class="section light-section" id="shop">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-heading">TRENDING NOW</p>
+                <h2>Best Sellers</h2>
+            </div>
+
+            <a href="#">Shop All →</a>
+
+        </div>
+
+
+        <div class="products">
+
+            <article class="product-card">
+
+                <div class="product-image product-1">
+                    <span class="badge">BESTSELLER</span>
+                    <button class="heart">♡</button>
+                </div>
+
+                <div class="product-info">
+                    <h3>Midnight Drive</h3>
+                    <p>Premium Art Poster</p>
+
+                    <div class="price">
+                        ₹299
+                    </div>
+
+                    <button onclick="addToCart()" class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image product-2">
+                    <span class="badge">TRENDING</span>
+                    <button class="heart">♡</button>
+                </div>
+
+                <div class="product-info">
+                    <h3>Tokyo Nights</h3>
+                    <p>Aesthetic Poster</p>
+
+                    <div class="price">
+                        ₹349
+                    </div>
+
+                    <button onclick="addToCart()" class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image product-3">
+                    <button class="heart">♡</button>
+                </div>
+
+                <div class="product-info">
+                    <h3>Formula Speed</h3>
+                    <p>Motorsport Poster</p>
+
+                    <div class="price">
+                        ₹299
+                    </div>
+
+                    <button onclick="addToCart()" class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image product-4">
+                    <button class="heart">♡</button>
+                </div>
+
+                <div class="product-info">
+                    <h3>Stay Focused</h3>
+                    <p>Motivational Poster</p>
+
+                    <div class="price">
+                        ₹249
+                    </div>
+
+                    <button onclick="addToCart()" class="add-btn">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CUSTOM POSTER ================= -->
+
+    <section class="custom-section" id="custom">
+
+        <div class="custom-content">
+
+            <p class="small-heading">MAKE IT PERSONAL</p>
+
+            <h2>
+                Your Picture.
+                <br>
+                Your Poster.
+            </h2>
+
+            <p>
+                Upload your favorite photo, add your own text,
+                choose your size and create a poster that's
+                completely yours.
+            </p>
+
+            <button class="primary-btn">
+                Create Custom Poster →
+            </button>
+
+        </div>
+
+        <div class="custom-preview">
+
+            <div class="custom-frame">
+
+                <div class="custom-poster">
+                    YOUR<br>
+                    STORY
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LED SECTION ================= -->
+
+    <section class="led-section">
+
+        <div class="led-content">
+
+            <p class="small-heading">LIGHT UP YOUR WALL</p>
+
+            <h2>
+                Meet The
+                <span>LED Collection.</span>
+            </h2>
+
+            <p>
+                Turn your room into an atmosphere.
+                Discover statement LED posters designed
+                to stand out day and night.
+            </p>
+
+            <button class="primary-btn">
+                Explore LED Posters →
+            </button>
+
+        </div>
+
+        <div class="led-light">
+            POSTER<br>
+            ADDA
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROOM INSPIRATION ================= -->
+
+    <section class="section" id="about">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-heading">GET INSPIRED</p>
+                <h2>Made For Your Space</h2>
+            </div>
+
+        </div>
+
+        <div class="room-grid">
+
+            <div class="room-card room-one">
+                <span>Bedroom</span>
+            </div>
+
+            <div class="room-card room-two">
+                <span>Gaming Room</span>
+            </div>
+
+            <div class="room-card room-three">
+                <span>Study Space</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <p class="small-heading">JOIN THE COMMUNITY</p>
+
+        <h2>
+            Get inspiration for your walls.
+        </h2>
+
+        <p>
+            New drops, exclusive collections and special offers.
+        </p>
+
+        <form onsubmit="subscribe(event)">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    Poster<span>Adda</span>
+                </div>
+
+                <p>
+                    Make your walls worth looking at.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Shop</h4>
+
+                <a href="#">Posters</a>
+                <a href="#">LED Posters</a>
+                <a href="#">Collections</a>
+                <a href="#">Best Sellers</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Help</h4>
+
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 PosterAdda. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SEARCH POPUP ================= -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-box">
+
+            <button onclick="closeSearch()" class="close-search">
+                ×
+            </button>
+
+            <h2>What are you looking for?</h2>
+
+            <input
+                type="text"
+                placeholder="Search posters, anime, cars, music..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
